@@ -1,16 +1,16 @@
 ﻿{
   "title": "CodeComb.Net.EmailSender",
-  "version": "2.0.0-*",
+  "version": "2.0.0-beta8",
   "description": "ASP.Net vNext Email Sender",
   "copyright": "Harbin Code Comb Technology Co.,Ltd",
   "authors": [ "AmamiyaYuuko" ],
-  "tags": [ "Localization" ,"vNext", "ASP.Net", "MVC" ],
+  "tags": [ "vNext", "ASP.Net", "Email", "Smtp" ],
   "iconUrl": "http://www.1234.sh/images/logo.png",
   "projectUrl": "https://github.com/CodeComb/EmailSender",
   "licenseUrl": "",
   
   "dependencies": {
-    "Microsoft.Extensions.DependencyInjection": "1.0.0-*"
+    "Microsoft.Framework.DependencyInjection": "1.0.0-beta8"
   },
   
   "frameworks": {

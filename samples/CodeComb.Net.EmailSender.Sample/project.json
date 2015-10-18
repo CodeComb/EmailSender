@@ -7,7 +7,7 @@
   "licenseUrl": "",
 
   "dependencies": {
-    "CodeComb.Net.EmailSender": "2.0.0-*"
+    "CodeComb.Net.EmailSender": "2.0.0-beta8"
   },
 
   "commands": {
