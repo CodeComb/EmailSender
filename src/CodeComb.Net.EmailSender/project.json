@@ -8,7 +8,11 @@
   "iconUrl": "http://www.1234.sh/images/logo.png",
   "projectUrl": "https://github.com/CodeComb/EmailSender",
   "licenseUrl": "",
-
+  
+  "dependencies": {
+    "Microsoft.Extensions.DependencyInjection": "1.0.0-*"
+  },
+  
   "frameworks": {
     "net46": { },
     "net45": { },
