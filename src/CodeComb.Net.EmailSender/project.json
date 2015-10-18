@@ -4,7 +4,7 @@
   "description": "ASP.Net vNext Email Sender",
   "copyright": "Harbin Code Comb Technology Co.,Ltd",
   "authors": [ "AmamiyaYuuko" ],
-  "tags": [ "Localization" ,"vNext", "ASP.Net", "MVC" ],
+  "tags": [ "Email", "Smtp" ,"vNext", "ASP.Net", "DNXCore50" ],
   "iconUrl": "http://www.1234.sh/images/logo.png",
   "projectUrl": "https://github.com/CodeComb/EmailSender",
   "licenseUrl": "",
