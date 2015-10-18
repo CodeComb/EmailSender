@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8F50B3F8-9013-4FD0-8FC2-D51D1CF0B2AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2E973F34-B253-4EF6-AEC5-DA93D887461C}"
+	ProjectSection(SolutionItems) = preProject
+		.travis.yml = .travis.yml
+		appveyor.yml = appveyor.yml
+		build.cmd = build.cmd
+		build.sh = build.sh
+		global.json = global.json
+		LICENSE = LICENSE
+		makefile.shade = makefile.shade
+		NuGet.config = NuGet.config
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CodeComb.Net.EmailSender", "src\CodeComb.Net.EmailSender\CodeComb.Net.EmailSender.xproj", "{CD84D240-C19B-460E-90E1-0217FC56454A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{2B376C66-634B-462D-8704-3913516CF46D}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CodeComb.Net.EmailSender.Sample", "samples\CodeComb.Net.EmailSender.Sample\CodeComb.Net.EmailSender.Sample.xproj", "{C0AB8A2F-A2D5-43B6-A8AF-7D6E213D2184}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD84D240-C19B-460E-90E1-0217FC56454A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD84D240-C19B-460E-90E1-0217FC56454A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD84D240-C19B-460E-90E1-0217FC56454A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD84D240-C19B-460E-90E1-0217FC56454A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0AB8A2F-A2D5-43B6-A8AF-7D6E213D2184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0AB8A2F-A2D5-43B6-A8AF-7D6E213D2184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0AB8A2F-A2D5-43B6-A8AF-7D6E213D2184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0AB8A2F-A2D5-43B6-A8AF-7D6E213D2184}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CD84D240-C19B-460E-90E1-0217FC56454A} = {8F50B3F8-9013-4FD0-8FC2-D51D1CF0B2AC}
+		{C0AB8A2F-A2D5-43B6-A8AF-7D6E213D2184} = {2B376C66-634B-462D-8704-3913516CF46D}
+	EndGlobalSection
+EndGlobal
