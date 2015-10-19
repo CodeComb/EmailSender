@@ -38,7 +38,7 @@ namespace CodeComb.Net.EmailSender
                     {
                         using (var stream = client.GetStream())
                         using (var reader = new StreamReader(stream))
-                        using (var writer = new StreamWriter(stream) { AutoFlush = true })
+                        using (var writer = new StreamWriter(stream) { AutoFlush = true, NewLine = "\r\n" })
                         {
                             writer.WriteLine("HELO " + server);
                             Console.WriteLine(reader.ReadLine());
@@ -98,7 +98,7 @@ namespace CodeComb.Net.EmailSender
                             stream.AuthenticateAsClient(server);
 
                             using (var reader = new StreamReader(stream))
-                            using (var writer = new StreamWriter(stream) { AutoFlush = true })
+                            using (var writer = new StreamWriter(stream) { AutoFlush = true, NewLine = "\r\n" })
                             {
                                 Console.WriteLine(reader.ReadLine());
 
