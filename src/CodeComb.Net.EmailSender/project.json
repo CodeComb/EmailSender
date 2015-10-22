@@ -15,7 +15,6 @@
   
   "frameworks": {
     "net46": { },
-    "net45": { },
     "dnx451": { },
     "dnxcore50": {
       "dependencies": {
