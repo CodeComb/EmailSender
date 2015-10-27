@@ -34,8 +34,9 @@ namespace CodeComb.Net.EmailSender
             if (!ssl)
                 return Task.Factory.StartNew(() =>
                 {
-                    using (var client = new TcpClient(server, port))
+                    using (var client = new TcpClient())
                     {
+                        client.ConnectAsync(server, port);
                         using (var stream = client.GetStream())
                         using (var reader = new StreamReader(stream))
                         using (var writer = new StreamWriter(stream) { AutoFlush = true, NewLine = "\r\n" })
@@ -90,8 +91,9 @@ namespace CodeComb.Net.EmailSender
             else
                 return Task.Factory.StartNew(() => 
                 {
-                    using (var client = new TcpClient(server, port))
+                    using (var client = new TcpClient())
                     {
+                        client.ConnectAsync(server, port);
                         using (var stream = new SslStream(client.GetStream(), false))
                         {
                             
