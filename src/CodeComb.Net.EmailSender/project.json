@@ -1,6 +1,6 @@
 ﻿{
   "title": "CodeComb.Net.EmailSender",
-  "version": "2.0.0-*",
+  "version": "2.0.0-rc1-final",
   "description": "ASP.Net vNext Email Sender",
   "copyright": "Harbin Code Comb Technology Co.,Ltd",
   "authors": [ "AmamiyaYuuko" ],
@@ -8,25 +8,24 @@
   "iconUrl": "http://www.1234.sh/images/logo.png",
   "projectUrl": "https://github.com/CodeComb/EmailSender",
   "licenseUrl": "",
-  
+
   "dependencies": {
-    "Microsoft.Extensions.DependencyInjection": "1.0.0-*"
+    "Microsoft.Extensions.DependencyInjection": "1.0.0-rc1-final"
   },
   
   "frameworks": {
-    "net46": { },
-    "dnx451": { },
-    "dnxcore50": {
+    "net451": { },
+    "dotnet5.4": {
       "dependencies": {
-        "Microsoft.CSharp": "4.0.1-*",
-        "System.Collections": "4.0.11-*",
-        "System.Linq": "4.0.1-*",
-        "System.Runtime": "4.0.21-*",
-        "System.Threading": "4.0.11-*",
-        "System.Net.Http": "4.0.1-*",
-        "System.Net.Sockets": "4.1.0-*",
-        "System.Net.Security": "4.0.0-*",
-        "System.Console": "4.0.0-*"
+        "Microsoft.CSharp": "4.0.1-beta-23516",
+        "System.Collections": "4.0.11-beta-23516",
+        "System.Linq": "4.0.1-beta-23516",
+        "System.Runtime": "4.0.21-beta-23516",
+        "System.Threading": "4.0.11-beta-23516",
+        "System.Net.Http": "4.0.1-beta-23516",
+        "System.Net.Sockets": "4.1.0-beta-23516",
+        "System.Net.Security": "4.0.0-beta-23516",
+        "System.Console": "4.0.0-beta-23516"
       }
     }
   }
