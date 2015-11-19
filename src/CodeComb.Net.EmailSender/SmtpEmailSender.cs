@@ -32,13 +32,14 @@ namespace CodeComb.Net.EmailSender
         public Task SendEmailAsync(string email, string subject, string message)
         {
             if (!ssl)
-                return Task.Factory.StartNew(() =>
+                return Task.Factory.StartNew(async () =>
                 {
-                    using (var client = new TcpClient(server, port))
+                    using (var client = new TcpClient())
                     {
+                        await client.ConnectAsync(server, port);
                         using (var stream = client.GetStream())
                         using (var reader = new StreamReader(stream))
-                        using (var writer = new StreamWriter(stream) { AutoFlush = true })
+                        using (var writer = new StreamWriter(stream) { AutoFlush = true, NewLine = "\r\n" })
                         {
                             writer.WriteLine("HELO " + server);
                             Console.WriteLine(reader.ReadLine());
@@ -88,17 +89,18 @@ namespace CodeComb.Net.EmailSender
                     }
                 });
             else
-                return Task.Factory.StartNew(() => 
+                return Task.Factory.StartNew(async () => 
                 {
-                    using (var client = new TcpClient(server, port))
+                    using (var client = new TcpClient())
                     {
+                        await client.ConnectAsync(server, port);
                         using (var stream = new SslStream(client.GetStream(), false))
                         {
                             
                             stream.AuthenticateAsClient(server);
 
                             using (var reader = new StreamReader(stream))
-                            using (var writer = new StreamWriter(stream) { AutoFlush = true })
+                            using (var writer = new StreamWriter(stream) { AutoFlush = true, NewLine = "\r\n" })
                             {
                                 Console.WriteLine(reader.ReadLine());
 
