@@ -37,7 +37,7 @@
         }
       }
     },
-    ".NETPlatform,Version=v5.4": {
+    ".NETPlatform,Version=v5.5": {
       "Microsoft.CSharp/4.0.1-beta-23516": {
         "type": "package",
         "dependencies": {
@@ -265,11 +265,13 @@
       "System.Net.Sockets/4.1.0-beta-23516": {
         "type": "package",
         "dependencies": {
+          "System.IO": "4.0.0",
           "System.Net.Primitives": "4.0.10",
-          "System.Runtime": "4.0.0"
+          "System.Runtime": "4.0.0",
+          "System.Threading.Tasks": "4.0.0"
         },
         "compile": {
-          "ref/dotnet5.4/System.Net.Sockets.dll": {}
+          "ref/dotnet5.5/System.Net.Sockets.dll": {}
         }
       },
       "System.ObjectModel/4.0.10": {
@@ -524,7 +526,7 @@
         }
       }
     },
-    ".NETPlatform,Version=v5.4/win7-x86": {
+    ".NETPlatform,Version=v5.5/win7-x86": {
       "Microsoft.CSharp/4.0.1-beta-23516": {
         "type": "package",
         "dependencies": {
@@ -913,11 +915,13 @@
       "System.Net.Sockets/4.1.0-beta-23516": {
         "type": "package",
         "dependencies": {
+          "System.IO": "4.0.0",
           "System.Net.Primitives": "4.0.10",
-          "System.Runtime": "4.0.0"
+          "System.Runtime": "4.0.0",
+          "System.Threading.Tasks": "4.0.0"
         },
         "compile": {
-          "ref/dotnet5.4/System.Net.Sockets.dll": {}
+          "ref/dotnet5.5/System.Net.Sockets.dll": {}
         }
       },
       "System.ObjectModel/4.0.10": {
@@ -1159,7 +1163,7 @@
         }
       }
     },
-    ".NETPlatform,Version=v5.4/win7-x64": {
+    ".NETPlatform,Version=v5.5/win7-x64": {
       "Microsoft.CSharp/4.0.1-beta-23516": {
         "type": "package",
         "dependencies": {
@@ -1548,11 +1552,13 @@
       "System.Net.Sockets/4.1.0-beta-23516": {
         "type": "package",
         "dependencies": {
+          "System.IO": "4.0.0",
           "System.Net.Primitives": "4.0.10",
-          "System.Runtime": "4.0.0"
+          "System.Runtime": "4.0.0",
+          "System.Threading.Tasks": "4.0.0"
         },
         "compile": {
-          "ref/dotnet5.4/System.Net.Sockets.dll": {}
+          "ref/dotnet5.5/System.Net.Sockets.dll": {}
         }
       },
       "System.ObjectModel/4.0.10": {
@@ -3605,7 +3611,7 @@
       "Microsoft.Extensions.DependencyInjection >= 1.0.0-rc1-final"
     ],
     ".NETFramework,Version=v4.5.1": [],
-    ".NETPlatform,Version=v5.4": [
+    ".NETPlatform,Version=v5.5": [
       "Microsoft.CSharp >= 4.0.1-beta-23516",
       "System.Collections >= 4.0.11-beta-23516",
       "System.Linq >= 4.0.1-beta-23516",

@@ -47,7 +47,7 @@
     "DNXCore,Version=v5.0": {
       "CodeComb.Net.EmailSender/2.0.0-rc1-final": {
         "type": "project",
-        "framework": ".NETPlatform,Version=v5.4",
+        "framework": ".NETPlatform,Version=v5.5",
         "dependencies": {
           "Microsoft.CSharp": "4.0.1-beta-23516",
           "Microsoft.Extensions.DependencyInjection": "1.0.0-rc1-final",
@@ -756,7 +756,7 @@
     "DNXCore,Version=v5.0/win7-x86": {
       "CodeComb.Net.EmailSender/2.0.0-rc1-final": {
         "type": "project",
-        "framework": ".NETPlatform,Version=v5.4",
+        "framework": ".NETPlatform,Version=v5.5",
         "dependencies": {
           "Microsoft.CSharp": "4.0.1-beta-23516",
           "Microsoft.Extensions.DependencyInjection": "1.0.0-rc1-final",
@@ -1730,7 +1730,7 @@
     "DNXCore,Version=v5.0/win7-x64": {
       "CodeComb.Net.EmailSender/2.0.0-rc1-final": {
         "type": "project",
-        "framework": ".NETPlatform,Version=v5.4",
+        "framework": ".NETPlatform,Version=v5.5",
         "dependencies": {
           "Microsoft.CSharp": "4.0.1-beta-23516",
           "Microsoft.Extensions.DependencyInjection": "1.0.0-rc1-final",
