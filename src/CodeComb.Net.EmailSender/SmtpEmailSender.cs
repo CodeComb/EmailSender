@@ -97,7 +97,7 @@ namespace CodeComb.Net.EmailSender
                         using (var stream = new SslStream(client.GetStream(), false))
                         {
                             
-                            stream.AuthenticateAsClient(server);
+                            await stream.AuthenticateAsClientAsync(server);
 
                             using (var reader = new StreamReader(stream))
                             using (var writer = new StreamWriter(stream) { AutoFlush = true, NewLine = "\r\n" })
